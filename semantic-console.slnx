@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".projects" />
+    <File Path="alias.ps1" />
+  </Folder>
+  <Project Path="Albatross.SemanticConsole.Tool/Albatross.SemanticConsole.Tool.csproj" />
+  <Project Path="Albatross.SemanticConsole/Albatross.SemanticConsole.csproj" />
+  <Project Path="project-mgmt/project-mgmt.csproj" />
+</Solution>
