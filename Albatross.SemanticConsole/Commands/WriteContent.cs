@@ -5,7 +5,7 @@ using System.CommandLine;
 
 namespace Albatross.SemanticConsole.Commands {
 	public class WriteContentParams {
-		public const string Verb = "smc write-content";
+		public const string Verb = "write-content";
 		public const string Description = "Write a value the operator picks from, types or copies";
 
 		[Argument]

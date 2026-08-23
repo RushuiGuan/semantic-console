@@ -6,7 +6,7 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace Albatross.SemanticConsole.Commands {
 	public class ReadUrlParams : QuestionParams {
-		public const string Verb = "smc read-url";
+		public const string Verb = "read-url";
 		public const string Description = "Ask for a URL and write the answer to stdout";
 
 		[UseOption<Inputs.DefaultOption<string>>]

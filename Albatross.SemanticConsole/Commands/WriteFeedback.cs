@@ -5,7 +5,7 @@ using System.CommandLine;
 
 namespace Albatross.SemanticConsole.Commands {
 	public class WriteFeedbackParams {
-		public const string Verb = "smc write-feedback";
+		public const string Verb = "write-feedback";
 		public const string Description = "Report on the question above, without opening a group of its own";
 
 		[Argument]

@@ -5,7 +5,7 @@ using System.CommandLine;
 
 namespace Albatross.SemanticConsole.Commands {
 	public class ReadConfirmationParams {
-		public const string Verb = "smc read-confirm";
+		public const string Verb = "read-confirm";
 		public const string Description = "Ask a yes or no question, and write True or False";
 
 		[UseOption<Inputs.ContextOption>]

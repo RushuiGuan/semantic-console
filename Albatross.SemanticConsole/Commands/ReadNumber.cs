@@ -7,7 +7,7 @@ using System.Globalization;
 
 namespace Albatross.SemanticConsole.Commands {
 	public class ReadNumberParams : QuestionParams {
-		public const string Verb = "smc read-number";
+		public const string Verb = "read-number";
 		public const string Description = "Ask for a number and write the answer to stdout";
 
 		[UseOption<Inputs.DefaultOption<double>>]

@@ -4,7 +4,7 @@ using System.CommandLine;
 
 namespace Albatross.SemanticConsole.Commands {
 	public class ReadContentParams {
-		public const string Verb = "smc read-content";
+		public const string Verb = "read-content";
 		public const string Description = "Write every line piped in as a content line";
 	}
 

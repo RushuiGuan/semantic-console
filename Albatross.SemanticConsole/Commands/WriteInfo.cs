@@ -5,7 +5,7 @@ using System.CommandLine;
 
 namespace Albatross.SemanticConsole.Commands {
 	public class WriteInfoParams {
-		public const string Verb = "smc write-info";
+		public const string Verb = "write-info";
 		public const string Description = "Write a line at step scope, subordinate to the action above it";
 
 		[Argument]

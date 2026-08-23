@@ -5,7 +5,7 @@ using System.CommandLine;
 
 namespace Albatross.SemanticConsole.Commands {
 	public class ReadSecretParams {
-		public const string Verb = "smc read-secret";
+		public const string Verb = "read-secret";
 		public const string Description = "Ask for a value without echoing it, and write the answer to stdout";
 
 		[UseOption<Inputs.ContextOption>]

@@ -5,7 +5,7 @@ using System.CommandLine;
 
 namespace Albatross.SemanticConsole.Commands {
 	public class WriteActionParams {
-		public const string Verb = "smc write-action";
+		public const string Verb = "write-action";
 		public const string Description = "";
 
 		[Argument]
