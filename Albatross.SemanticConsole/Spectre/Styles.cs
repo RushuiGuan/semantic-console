@@ -1,5 +1,4 @@
-﻿using Albatross.SemanticConsole.Enums;
-using Spectre.Console;
+﻿using Spectre.Console;
 using Status = Albatross.SemanticConsole.Enums.Status;
 
 namespace Albatross.SemanticConsole.Spectre {
@@ -13,7 +12,7 @@ namespace Albatross.SemanticConsole.Spectre {
 		public static Style Warning { get; } = new Style(Color.Yellow);
 		public static Style Error { get; } = new Style(Color.Red);
 		public static Style Success { get; } = new Style(Color.Lime);
-		public static Style Content { get; } = Style.Plain;
+		public static Style Content { get; } = new Style(Color.Gray100);
 
 		/// <summary>
 		/// Every status renders at every level. <paramref name="defaultStyle"/> carries what the element

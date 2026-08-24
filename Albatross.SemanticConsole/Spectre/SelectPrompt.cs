@@ -25,7 +25,6 @@ namespace Albatross.SemanticConsole.Spectre {
 			}
 			var answer = await console.PromptAsync(prompt, cancellationToken);
 			contentWriter.Write(new Content {
-				Level = Enums.Level.L1,
 				Text = $"{element.Question}: {answer}",
 			});
 			return answer;

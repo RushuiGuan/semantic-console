@@ -48,27 +48,14 @@ $instance = & $Smc read-select `
 # --- a prompt with a default: Enter alone answers it ----------------------------------------------
 $adminConnection = & $Smc read-text `
 	--context "Connection string for schema migrations. It needs schema change and database creation privileges." `
-	--question "admin connection string:" `
+	--question "admin connection string" `
 	--default "Server=.;Database=mw"
 & $Smc write-feedback "connected as sa"
-Write-Verbose "admin connection string: $adminConnection"
 
-# --- a prompt the operator can get wrong: the refusal costs one more prompt ------------------------
-# The context is written once. A re-ask repeats the question alone, inside the group it already opened.
 $knownLogins = @('mw_svc')
-$context = "Login the server runs as. It needs read and write on mw only."
-while ($true) {
-	$arguments = @('read-text', '--question', 'runtime login:')
-	if ($context) {
-		$arguments += @('--context', $context)
-	}
-	$runtimeLogin = & $Smc @arguments
-	if ($knownLogins -contains $runtimeLogin) {
-		break
-	}
-	& $Smc write-feedback "That login does not exist." --status Error
-	$context = $null
-}
+$runtimeLogin = &Smc read-text --context "Login the server runs as. It needs read and write on mw only." `
+	--question "runtime login" `
+	--regex mw_svc;
 & $Smc write-feedback "created $runtimeLogin and granted read and write on mw"
 
 # --- the work itself ------------------------------------------------------------------------------

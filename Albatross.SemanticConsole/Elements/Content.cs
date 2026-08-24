@@ -1,11 +1,12 @@
-﻿namespace Albatross.SemanticConsole.Elements {
+﻿using Albatross.SemanticConsole.Enums;
+
+namespace Albatross.SemanticConsole.Elements {
 	public record Content : ISemanticElement, IPromptElement<string> {
 		public string? Context => null;
 		public string Question => string.Empty;
 		public string? Default => null;
 		public bool AllowEmpty => true;
-		public string? Text { get; set; }
-
-		public Enums.Level Level { get; init; } = Enums.Level.L1;
+		public Level Level => Level.L2;
+		public string Text { get; set; } = string.Empty;
 	}
 }
