@@ -1,7 +1,10 @@
 <Solution>
   <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+    <File Path=".gitignore" />
     <File Path=".projects" />
     <File Path="alias.ps1" />
+    <File Path="Directory.Build.props" />
   </Folder>
   <Project Path="Albatross.SemanticConsole.Tool/Albatross.SemanticConsole.Tool.csproj" />
   <Project Path="Albatross.SemanticConsole/Albatross.SemanticConsole.csproj" />

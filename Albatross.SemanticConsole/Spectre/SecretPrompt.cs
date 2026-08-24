@@ -14,7 +14,7 @@ namespace Albatross.SemanticConsole.Spectre {
 				if (answer.Length > 0) {
 					return answer;
 				}
-				Refuse("^ required");
+				Refuse("required");
 			}
 		}
 	}

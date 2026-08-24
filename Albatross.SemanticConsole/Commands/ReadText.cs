@@ -6,7 +6,7 @@ using System.CommandLine;
 namespace Albatross.SemanticConsole.Commands {
 	public class ReadTextParams : QuestionParams {
 		public const string Verb = "read-text";
-		public const string Description = "Ask for a value and write the answer to stdout";
+		public const string Description = "Prompt for text value";
 
 		[UseOption<Inputs.DefaultOption<string>>]
 		public string? Default { get; init; }

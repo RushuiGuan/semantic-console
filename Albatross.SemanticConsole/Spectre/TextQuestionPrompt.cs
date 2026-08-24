@@ -31,7 +31,7 @@ namespace Albatross.SemanticConsole.Spectre {
 						return answer;
 					}
 				}
-				Refuse("^ required");
+				Refuse("required");
 			}
 		}
 	}

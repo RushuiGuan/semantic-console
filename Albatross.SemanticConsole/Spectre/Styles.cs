@@ -2,7 +2,7 @@
 using Spectre.Console;
 using Status = Albatross.SemanticConsole.Enums.Status;
 
-namespace Albatross.SemanticConsole {
+namespace Albatross.SemanticConsole.Spectre {
 	/// <summary>
 	/// The sixteen colour palette entries a PowerShell installer writes with, so a run reads the same
 	/// whichever one produced it.

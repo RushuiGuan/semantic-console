@@ -1,5 +1,4 @@
-﻿using Albatross.SemanticConsole;
-using Albatross.SemanticConsole.Elements;
+﻿using Albatross.SemanticConsole.Elements;
 using Albatross.SemanticConsole.Services;
 using Spectre.Console;
 

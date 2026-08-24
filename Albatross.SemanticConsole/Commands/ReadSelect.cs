@@ -6,7 +6,7 @@ using System.CommandLine;
 namespace Albatross.SemanticConsole.Commands {
 	public class ReadSelectParams : QuestionParams {
 		public const string Verb = "read-select";
-		public const string Description = "Ask the operator to pick one of the choices, and write it to stdout";
+		public const string Description = "Prompt for a selection based on provided choices";
 
 		[Option(Description = "The choices to pick from, matched however the operator types them", AllowMultipleArgumentsPerToken = true)]
 		public required string[] Choices { get; init; }

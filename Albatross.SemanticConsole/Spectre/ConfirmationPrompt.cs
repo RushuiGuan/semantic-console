@@ -10,7 +10,7 @@ namespace Albatross.SemanticConsole.Spectre {
 			WriteContext(element);
 			var prompt = new TextPrompt<string>(element.Question, StringComparer.InvariantCultureIgnoreCase);
 			prompt.Choices.AddRange("y", "n");
-			prompt.InvalidChoiceMessage = "[red]  ^ invalid input[/]";
+			prompt.InvalidChoiceMessage = "[red]  invalid input[/]";
 			if (element.Default == true) {
 				prompt.DefaultValue("y");
 			} else if (element.Default == false) {

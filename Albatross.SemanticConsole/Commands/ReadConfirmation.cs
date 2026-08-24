@@ -6,7 +6,7 @@ using System.CommandLine;
 namespace Albatross.SemanticConsole.Commands {
 	public class ReadConfirmationParams {
 		public const string Verb = "read-confirm";
-		public const string Description = "Ask a yes or no question, and write True or False";
+		public const string Description = "Prompt for a yes or no question";
 
 		[UseOption<Inputs.ContextOption>]
 		public string? Context { get; init; }

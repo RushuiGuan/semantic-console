@@ -2,16 +2,9 @@
 using Spectre.Console;
 using System.Text;
 
-namespace Albatross.SemanticConsole {
+namespace Albatross.SemanticConsole.Spectre {
 	public static class Extensions {
 		public const int IndentSize = 2;
-
-		/// <summary>
-		/// The spaces a line at <paramref name="level"/> starts with. Indent is measured in the text itself,
-		/// two spaces per level.
-		/// </summary>
-		public static string Indent(this Level level) => new string(' ', ((int)level - 1) * IndentSize);
-
 		/// <summary>
 		/// The same indent as <see cref="Indent"/>, as padding a renderable is written with. Padding is
 		/// applied to every line the text wraps onto, so a continuation starts at the column its own text

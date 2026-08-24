@@ -6,7 +6,7 @@ using System.CommandLine;
 namespace Albatross.SemanticConsole.Commands {
 	public class WriteInfoParams {
 		public const string Verb = "write-info";
-		public const string Description = "Write a line at step scope, subordinate to the action above it";
+		public const string Description = "Write an info element";
 
 		[Argument]
 		public required string Info { get; init; }

@@ -8,15 +8,15 @@ using System.Globalization;
 namespace Albatross.SemanticConsole.Commands {
 	public class ReadNumberParams : QuestionParams {
 		public const string Verb = "read-number";
-		public const string Description = "Ask for a number and write the answer to stdout";
+		public const string Description = "Prompt for a number";
 
 		[UseOption<Inputs.DefaultOption<double>>]
 		public double? Default { get; init; }
 
-		[Option(Description = "The smallest answer accepted")]
+		[Option(Description = "The smallest accepted value")]
 		public double? Min { get; init; }
 
-		[Option(Description = "The largest answer accepted")]
+		[Option(Description = "The largest accepted value")]
 		public double? Max { get; init; }
 	}
 
@@ -31,9 +31,9 @@ namespace Albatross.SemanticConsole.Commands {
 			if (!double.TryParse(input, NumberStyles.Float, CultureInfo.InvariantCulture, out var value)) {
 				validationError = "^ value is not a number";
 			} else if (parameters.Min.HasValue && value < parameters.Min.Value) {
-				validationError = $"^ value is below {Format(parameters.Min.Value)}";
+				validationError = $"^ value is less than {Format(parameters.Min.Value)}";
 			} else if (parameters.Max.HasValue && value > parameters.Max.Value) {
-				validationError = $"^ value is above {Format(parameters.Max.Value)}";
+				validationError = $"^ value is greater than {Format(parameters.Max.Value)}";
 			} else {
 				validationError = null;
 				return true;

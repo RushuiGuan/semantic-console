@@ -7,7 +7,7 @@ using System.Diagnostics.CodeAnalysis;
 namespace Albatross.SemanticConsole.Commands {
 	public class ReadUrlParams : QuestionParams {
 		public const string Verb = "read-url";
-		public const string Description = "Ask for a URL and write the answer to stdout";
+		public const string Description = "Prompt for a URL";
 
 		[UseOption<Inputs.DefaultOption<string>>]
 		public string? Default { get; init; }
