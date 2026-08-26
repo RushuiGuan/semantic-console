@@ -11,8 +11,7 @@
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageIcon>icon.png</PackageIcon>
 		<Authors>Rushui Guan</Authors>
-		<PackageTags>
-		</PackageTags>
+		<PackageTags></PackageTags>
 		<PackageReleaseNotes>See https://rushuiguan.github.io/semantic-console/release-notes</PackageReleaseNotes>
 		<!-- SourceLink Configuration -->
 		<PublishRepositoryUrl>true</PublishRepositoryUrl>
